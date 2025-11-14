@@ -5,33 +5,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
+  background-color: #f0f0f0;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  max-width: 960px;
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh; /* Define uma altura fixa para o contêiner */
+  background-color: white;
   margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Adiciona a barra de rolagem vertical quando necessário */
 }
 
 .header {
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
+  background-color: white; /* Garante que o fundo seja branco ao rolar */
 }
 
 .header h1 {
-  font-size: 2rem;
+  font-size: 1.5rem; /* Tamanho de fonte padrão para mobile */
+  margin: 0;
+  padding: 10px 0;
 }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* Uma coluna em telas pequenas */
+  grid-template-columns: 1fr;
   gap: 20px;
   width: 100%;
+  padding-bottom: 80px; /* Espaço para o botão de rodapé não sobrepor o conteúdo */
 }
 
 .product-item {
@@ -66,7 +77,6 @@ body {
 }
 
 .footer-button {
-  margin-top: 20px;
   width: 100%;
   text-align: center;
 }
@@ -186,4 +196,23 @@ body {
   padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+/* Media Query para tablets e telas maiores */
+@media (min-width: 600px) {
+  .product-grid {
+    /* Duas colunas para tablets */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media Query para desktops */
+@media (min-width: 900px) {
+  .header h1 {
+    font-size: 2.2rem; /* Fonte maior para desktops */
+  }
+  .product-grid {
+    /* Três colunas para desktops */
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
