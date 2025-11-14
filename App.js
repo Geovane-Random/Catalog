@@ -142,7 +142,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <header className="header">
+      <header className="header" style={{ position: 'sticky', top: 0, zIndex: 1 }}>
         <h1>Bem vindo ao nosso catálogo!</h1>
       </header>
 
@@ -158,7 +158,7 @@ const App = () => {
         ))}
       </main>
 
-      <div className="footer-button">
+      <div className="footer-button" style={{ position: 'sticky', bottom: 0, zIndex: 1 }}>
         <button onClick={() => setEditModalVisible(true)} disabled={selectedItems.length === 0}>
           Revisar e Enviar Pedido
         </button>
