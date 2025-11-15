@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { products } from './data.js';
+import { WHATSAPP_PHONE_NUMBER } from './config.js';
 
 const App = () => {
   const [selectedItems, setSelectedItems] = useState([]);
@@ -44,8 +45,7 @@ const App = () => {
       .map(item => `${item.quantity}x ${item.name} (Tamanho: ${item.size})`)
       .join(', ');
     const fullMessage = `Olá, gostaria de solicitar um orçamento para os seguintes itens: ${message}`;
-    const phoneNumber = '556392341553';
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(fullMessage)}`;
+    const url = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodeURIComponent(fullMessage)}`;
     window.open(url, '_blank');
   };
 

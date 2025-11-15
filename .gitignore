@@ -1,1 +1,4 @@
 node_modules
+
+# Arquivo de configuração local - não deve ser versionado
+config.js

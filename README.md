@@ -28,17 +28,21 @@ Para executar este projeto localmente, siga os passos abaixo:
     git clone https://github.com/seu-usuario/seu-repositorio.git
     ```
 
-2.  **Navegue até o diretório do projeto**
+2.  **Configure o número do WhatsApp**
+    Crie uma cópia do arquivo `config.example.js` e renomeie-a para `config.js`. Em seguida, edite o arquivo `config.js` e insira o número de telefone para o qual as mensagens serão enviadas.
+    > **Nota**: Para testes em ambiente de desenvolvimento, você pode utilizar seu próprio número do WhatsApp, pois a API não oferece um número de teste.
+
+3.  **Navegue até o diretório do projeto**
     ```bash
     cd Catalog
     ```
 
-3.  **Instale as dependências**
+4.  **Instale as dependências**
     ```bash
     npm install
     ```
 
-4.  **Inicie a aplicação**
+5.  **Inicie a aplicação**
     ```bash
     npm start
     ```
