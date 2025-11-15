@@ -8,14 +8,14 @@ body {
   background-color: #efd2f1;
 }
 
-.container {
+.container { /*Onde ficam contidos todos os elementos da página*/
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   max-width: 1200px;
   height: 100vh; /* Define uma altura fixa para o contêiner */
-  background-color: white;
+  background-color: #fec0e6;
   margin: 0 auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding: 15px;
@@ -56,8 +56,8 @@ body {
 }
 
 .product-image {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   margin-bottom: 10px;
 }
@@ -74,6 +74,17 @@ body {
 
 .select-button:hover {
   background-color: #1976d2;
+}
+
+/* O novo estilo para o nome do produto com contorno */
+/* Estilo para o nome do produto com fundo retangular arredondado */
+.product-name {
+  background-color: #6a1b9a; /* Um roxo escuro para contrastar com o fundo rosa */
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px; /* Espaçamento interno para criar o retângulo */
+  border-radius: 5px; /* Cantos arredondados, como o botão */
+  margin-bottom: 10px; /* Adiciona um espaço antes do botão "Selecionar" */
 }
 
 .footer-button {

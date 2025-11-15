@@ -76,7 +76,7 @@ const App = () => {
         {products.map((item) => (
           <div key={item.id} className="product-item">
             <img src={item.image} alt={item.name} className="product-image" />
-            <p>{item.name}</p>
+            <p className="product-name">{item.name}</p>
             <button className="select-button" onClick={() => openSelectionModal(item)}>
               Selecionar
             </button>
