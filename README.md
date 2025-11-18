@@ -25,7 +25,7 @@ Para executar este projeto localmente, siga os passos abaixo:
 
 1.  **Clone o repositório**
     ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
+    git clone https://github.com/Geovane-Random/Catalog.git
     ```
 
 2.  **Configure o número do WhatsApp**
